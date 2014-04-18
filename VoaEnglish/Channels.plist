@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>VOA Special English</key>
+	<dict>
+		<key>Technology Report</key>
+		<string>8</string>
+		<key>This is America</key>
+		<string>9</string>
+		<key>Agriculture Report</key>
+		<string>10</string>
+		<key>Science in the News</key>
+		<string>11</string>
+		<key>Health Report</key>
+		<string>12</string>
+		<key>Explorations</key>
+		<string>13</string>
+		<key>Education Report</key>
+		<string>14</string>
+		<key>The Making of a Nation</key>
+		<string>15</string>
+		<key>Economics Report</key>
+		<string>16</string>
+		<key>American Mosaic</key>
+		<string>17</string>
+		<key>In the News</key>
+		<string>18</string>
+		<key>American Stories</key>
+		<string>19</string>
+		<key>Words And Their Stories</key>
+		<string>20</string>
+		<key>People in America</key>
+		<string>21</string>
+		<key>AS IT IS</key>
+		<string>42</string>
+	</dict>
+	<key>VOA Standard English</key>
+	<dict>
+		<key>Audio News</key>
+		<string>2</string>
+		<key>Video News</key>
+		<string>3</string>
+	</dict>
+	<key>VOA Learning English</key>
+	<dict>
+		<key>Bilingual News</key>
+		<string>23</string>
+		<key>Learn A Word</key>
+		<string>26</string>
+		<key>How to Say it</key>
+		<string>25</string>
+		<key>Business Etiquette</key>
+		<string>28</string>
+		<key>Words And Idioms</key>
+		<string>31</string>
+		<key>American English Mosaic</key>
+		<string>24</string>
+		<key>Sports English</key>
+		<string>32</string>
+		<key>Go English</key>
+		<string>27</string>
+		<key>Popular American</key>
+		<string>30</string>
+		<key>American Cafe</key>
+		<string>33</string>
+		<key>Intermediate Enlish</key>
+		<string>34</string>
+	</dict>
+</dict>
+</plist>

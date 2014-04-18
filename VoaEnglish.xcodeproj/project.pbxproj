@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B425539D1900BC7C00EF9962 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B425539C1900BC7C00EF9962 /* Foundation.framework */; };
+		B425539F1900BC7C00EF9962 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B425539E1900BC7C00EF9962 /* CoreGraphics.framework */; };
+		B42553A11900BC7C00EF9962 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42553A01900BC7C00EF9962 /* UIKit.framework */; };
+		B42553A71900BC7C00EF9962 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B42553A51900BC7C00EF9962 /* InfoPlist.strings */; };
+		B42553A91900BC7C00EF9962 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B42553A81900BC7C00EF9962 /* main.m */; };
+		B42553AD1900BC7C00EF9962 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B42553AC1900BC7C00EF9962 /* AppDelegate.m */; };
+		B42553AF1900BC7C00EF9962 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42553AE1900BC7C00EF9962 /* Images.xcassets */; };
+		B42553B61900BC7C00EF9962 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42553B51900BC7C00EF9962 /* XCTest.framework */; };
+		B42553B71900BC7C00EF9962 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B425539C1900BC7C00EF9962 /* Foundation.framework */; };
+		B42553B81900BC7C00EF9962 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42553A01900BC7C00EF9962 /* UIKit.framework */; };
+		B42553C01900BC7C00EF9962 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B42553BE1900BC7C00EF9962 /* InfoPlist.strings */; };
+		B42553C21900BC7C00EF9962 /* VoaEnglishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B42553C11900BC7C00EF9962 /* VoaEnglishTests.m */; };
+		B42553CD1900BF0700EF9962 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B42553CC1900BF0700EF9962 /* DataManager.m */; };
+		B42553D91900C07800EF9962 /* ChannelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42553D81900C07800EF9962 /* ChannelsViewController.m */; };
+		B42553DF1900C0AD00EF9962 /* WordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42553DE1900C0AD00EF9962 /* WordsViewController.m */; };
+		B42553E21900C0B700EF9962 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42553E11900C0B700EF9962 /* SettingViewController.m */; };
+		B42553E41900C30800EF9962 /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = B42553E31900C30800EF9962 /* Test.xib */; };
+		B42553F71900C8CF00EF9962 /* tabSetting.png in Resources */ = {isa = PBXBuildFile; fileRef = B42553F51900C8CF00EF9962 /* tabSetting.png */; };
+		B42553F81900C8CF00EF9962 /* tabSetting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B42553F61900C8CF00EF9962 /* tabSetting@2x.png */; };
+		B42553FB1900CB0700EF9962 /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42553FA1900CB0700EF9962 /* FavoritesViewController.m */; };
+		B42553FE1900CB5F00EF9962 /* tabHome.png in Resources */ = {isa = PBXBuildFile; fileRef = B42553FC1900CB5F00EF9962 /* tabHome.png */; };
+		B42553FF1900CB5F00EF9962 /* tabHome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B42553FD1900CB5F00EF9962 /* tabHome@2x.png */; };
+		B42554021900CBA400EF9962 /* tabFavorite.png in Resources */ = {isa = PBXBuildFile; fileRef = B42554001900CBA400EF9962 /* tabFavorite.png */; };
+		B42554031900CBA400EF9962 /* tabFavorite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B42554011900CBA400EF9962 /* tabFavorite@2x.png */; };
+		B42554061900CC1600EF9962 /* tabWord.png in Resources */ = {isa = PBXBuildFile; fileRef = B42554041900CC1600EF9962 /* tabWord.png */; };
+		B42554071900CC1600EF9962 /* tabWord@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B42554051900CC1600EF9962 /* tabWord@2x.png */; };
+		B425540A1900D7E700EF9962 /* ChannelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42554091900D7E700EF9962 /* ChannelDetailViewController.m */; };
+		B425540D1900D80700EF9962 /* ArticleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B425540C1900D80700EF9962 /* ArticleListViewController.m */; };
+		B425540F1900F21B00EF9962 /* Channels.plist in Resources */ = {isa = PBXBuildFile; fileRef = B425540E1900F21B00EF9962 /* Channels.plist */; };
+		B425541819011F8300EF9962 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B425541719011F8300EF9962 /* PlayerViewController.m */; };
+		B42554271901223B00EF9962 /* tabPlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = B42554251901223B00EF9962 /* tabPlayer.png */; };
+		B425542A190124CB00EF9962 /* tabPlayer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4255429190124CB00EF9962 /* tabPlayer@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B42553B91900BC7C00EF9962 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B42553911900BC7C00EF9962 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B42553981900BC7C00EF9962;
+			remoteInfo = VoaEnglish;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B42553991900BC7C00EF9962 /* VoaEnglish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoaEnglish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B425539C1900BC7C00EF9962 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B425539E1900BC7C00EF9962 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B42553A01900BC7C00EF9962 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B42553A41900BC7C00EF9962 /* VoaEnglish-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VoaEnglish-Info.plist"; sourceTree = "<group>"; };
+		B42553A61900BC7C00EF9962 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B42553A81900BC7C00EF9962 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B42553AA1900BC7C00EF9962 /* VoaEnglish-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoaEnglish-Prefix.pch"; sourceTree = "<group>"; };
+		B42553AB1900BC7C00EF9962 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B42553AC1900BC7C00EF9962 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B42553AE1900BC7C00EF9962 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B42553B41900BC7C00EF9962 /* VoaEnglishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoaEnglishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B42553B51900BC7C00EF9962 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B42553BD1900BC7C00EF9962 /* VoaEnglishTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VoaEnglishTests-Info.plist"; sourceTree = "<group>"; };
+		B42553BF1900BC7C00EF9962 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B42553C11900BC7C00EF9962 /* VoaEnglishTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoaEnglishTests.m; sourceTree = "<group>"; };
+		B42553CB1900BF0700EF9962 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		B42553CC1900BF0700EF9962 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		B42553D71900C07800EF9962 /* ChannelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelsViewController.h; sourceTree = "<group>"; };
+		B42553D81900C07800EF9962 /* ChannelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelsViewController.m; sourceTree = "<group>"; };
+		B42553DD1900C0AD00EF9962 /* WordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordsViewController.h; sourceTree = "<group>"; };
+		B42553DE1900C0AD00EF9962 /* WordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordsViewController.m; sourceTree = "<group>"; };
+		B42553E01900C0B700EF9962 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		B42553E11900C0B700EF9962 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		B42553E31900C30800EF9962 /* Test.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test.xib; sourceTree = "<group>"; };
+		B42553F51900C8CF00EF9962 /* tabSetting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabSetting.png; sourceTree = "<group>"; };
+		B42553F61900C8CF00EF9962 /* tabSetting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabSetting@2x.png"; sourceTree = "<group>"; };
+		B42553F91900CB0700EF9962 /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
+		B42553FA1900CB0700EF9962 /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
+		B42553FC1900CB5F00EF9962 /* tabHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabHome.png; sourceTree = "<group>"; };
+		B42553FD1900CB5F00EF9962 /* tabHome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabHome@2x.png"; sourceTree = "<group>"; };
+		B42554001900CBA400EF9962 /* tabFavorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabFavorite.png; sourceTree = "<group>"; };
+		B42554011900CBA400EF9962 /* tabFavorite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabFavorite@2x.png"; sourceTree = "<group>"; };
+		B42554041900CC1600EF9962 /* tabWord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabWord.png; sourceTree = "<group>"; };
+		B42554051900CC1600EF9962 /* tabWord@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabWord@2x.png"; sourceTree = "<group>"; };
+		B42554081900D7E700EF9962 /* ChannelDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelDetailViewController.h; sourceTree = "<group>"; };
+		B42554091900D7E700EF9962 /* ChannelDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelDetailViewController.m; sourceTree = "<group>"; };
+		B425540B1900D80700EF9962 /* ArticleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleListViewController.h; sourceTree = "<group>"; };
+		B425540C1900D80700EF9962 /* ArticleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleListViewController.m; sourceTree = "<group>"; };
+		B425540E1900F21B00EF9962 /* Channels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Channels.plist; sourceTree = "<group>"; };
+		B425541619011F8300EF9962 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		B425541719011F8300EF9962 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		B42554251901223B00EF9962 /* tabPlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabPlayer.png; sourceTree = "<group>"; };
+		B4255429190124CB00EF9962 /* tabPlayer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabPlayer@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B42553961900BC7C00EF9962 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B425539F1900BC7C00EF9962 /* CoreGraphics.framework in Frameworks */,
+				B42553A11900BC7C00EF9962 /* UIKit.framework in Frameworks */,
+				B425539D1900BC7C00EF9962 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B42553B11900BC7C00EF9962 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42553B61900BC7C00EF9962 /* XCTest.framework in Frameworks */,
+				B42553B81900BC7C00EF9962 /* UIKit.framework in Frameworks */,
+				B42553B71900BC7C00EF9962 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B42553901900BC7C00EF9962 = {
+			isa = PBXGroup;
+			children = (
+				B42553A21900BC7C00EF9962 /* VoaEnglish */,
+				B42553BB1900BC7C00EF9962 /* VoaEnglishTests */,
+				B425539B1900BC7C00EF9962 /* Frameworks */,
+				B425539A1900BC7C00EF9962 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B425539A1900BC7C00EF9962 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B42553991900BC7C00EF9962 /* VoaEnglish.app */,
+				B42553B41900BC7C00EF9962 /* VoaEnglishTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B425539B1900BC7C00EF9962 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B425539C1900BC7C00EF9962 /* Foundation.framework */,
+				B425539E1900BC7C00EF9962 /* CoreGraphics.framework */,
+				B42553A01900BC7C00EF9962 /* UIKit.framework */,
+				B42553B51900BC7C00EF9962 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B42553A21900BC7C00EF9962 /* VoaEnglish */ = {
+			isa = PBXGroup;
+			children = (
+				B42553AB1900BC7C00EF9962 /* AppDelegate.h */,
+				B42553AC1900BC7C00EF9962 /* AppDelegate.m */,
+				B42553CB1900BF0700EF9962 /* DataManager.h */,
+				B42553CC1900BF0700EF9962 /* DataManager.m */,
+				B42553D71900C07800EF9962 /* ChannelsViewController.h */,
+				B42553D81900C07800EF9962 /* ChannelsViewController.m */,
+				B42554081900D7E700EF9962 /* ChannelDetailViewController.h */,
+				B42554091900D7E700EF9962 /* ChannelDetailViewController.m */,
+				B425540B1900D80700EF9962 /* ArticleListViewController.h */,
+				B425540C1900D80700EF9962 /* ArticleListViewController.m */,
+				B42553F91900CB0700EF9962 /* FavoritesViewController.h */,
+				B42553FA1900CB0700EF9962 /* FavoritesViewController.m */,
+				B42553DD1900C0AD00EF9962 /* WordsViewController.h */,
+				B42553DE1900C0AD00EF9962 /* WordsViewController.m */,
+				B42553E01900C0B700EF9962 /* SettingViewController.h */,
+				B42553E11900C0B700EF9962 /* SettingViewController.m */,
+				B425541619011F8300EF9962 /* PlayerViewController.h */,
+				B425541719011F8300EF9962 /* PlayerViewController.m */,
+				B425540E1900F21B00EF9962 /* Channels.plist */,
+				B42553E31900C30800EF9962 /* Test.xib */,
+				B42553AE1900BC7C00EF9962 /* Images.xcassets */,
+				B42553A31900BC7C00EF9962 /* Supporting Files */,
+			);
+			path = VoaEnglish;
+			sourceTree = "<group>";
+		};
+		B42553A31900BC7C00EF9962 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4255429190124CB00EF9962 /* tabPlayer@2x.png */,
+				B42554251901223B00EF9962 /* tabPlayer.png */,
+				B42554041900CC1600EF9962 /* tabWord.png */,
+				B42554051900CC1600EF9962 /* tabWord@2x.png */,
+				B42553FC1900CB5F00EF9962 /* tabHome.png */,
+				B42553FD1900CB5F00EF9962 /* tabHome@2x.png */,
+				B42553F51900C8CF00EF9962 /* tabSetting.png */,
+				B42553F61900C8CF00EF9962 /* tabSetting@2x.png */,
+				B42554001900CBA400EF9962 /* tabFavorite.png */,
+				B42554011900CBA400EF9962 /* tabFavorite@2x.png */,
+				B42553A41900BC7C00EF9962 /* VoaEnglish-Info.plist */,
+				B42553A51900BC7C00EF9962 /* InfoPlist.strings */,
+				B42553A81900BC7C00EF9962 /* main.m */,
+				B42553AA1900BC7C00EF9962 /* VoaEnglish-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B42553BB1900BC7C00EF9962 /* VoaEnglishTests */ = {
+			isa = PBXGroup;
+			children = (
+				B42553C11900BC7C00EF9962 /* VoaEnglishTests.m */,
+				B42553BC1900BC7C00EF9962 /* Supporting Files */,
+			);
+			path = VoaEnglishTests;
+			sourceTree = "<group>";
+		};
+		B42553BC1900BC7C00EF9962 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B42553BD1900BC7C00EF9962 /* VoaEnglishTests-Info.plist */,
+				B42553BE1900BC7C00EF9962 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B42553981900BC7C00EF9962 /* VoaEnglish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B42553C51900BC7C00EF9962 /* Build configuration list for PBXNativeTarget "VoaEnglish" */;
+			buildPhases = (
+				B42553951900BC7C00EF9962 /* Sources */,
+				B42553961900BC7C00EF9962 /* Frameworks */,
+				B42553971900BC7C00EF9962 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoaEnglish;
+			productName = VoaEnglish;
+			productReference = B42553991900BC7C00EF9962 /* VoaEnglish.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B42553B31900BC7C00EF9962 /* VoaEnglishTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B42553C81900BC7C00EF9962 /* Build configuration list for PBXNativeTarget "VoaEnglishTests" */;
+			buildPhases = (
+				B42553B01900BC7C00EF9962 /* Sources */,
+				B42553B11900BC7C00EF9962 /* Frameworks */,
+				B42553B21900BC7C00EF9962 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B42553BA1900BC7C00EF9962 /* PBXTargetDependency */,
+			);
+			name = VoaEnglishTests;
+			productName = VoaEnglishTests;
+			productReference = B42553B41900BC7C00EF9962 /* VoaEnglishTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B42553911900BC7C00EF9962 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Lion;
+				TargetAttributes = {
+					B42553B31900BC7C00EF9962 = {
+						TestTargetID = B42553981900BC7C00EF9962;
+					};
+				};
+			};
+			buildConfigurationList = B42553941900BC7C00EF9962 /* Build configuration list for PBXProject "VoaEnglish" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B42553901900BC7C00EF9962;
+			productRefGroup = B425539A1900BC7C00EF9962 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B42553981900BC7C00EF9962 /* VoaEnglish */,
+				B42553B31900BC7C00EF9962 /* VoaEnglishTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B42553971900BC7C00EF9962 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42553A71900BC7C00EF9962 /* InfoPlist.strings in Resources */,
+				B42553E41900C30800EF9962 /* Test.xib in Resources */,
+				B42554021900CBA400EF9962 /* tabFavorite.png in Resources */,
+				B42553F81900C8CF00EF9962 /* tabSetting@2x.png in Resources */,
+				B42554071900CC1600EF9962 /* tabWord@2x.png in Resources */,
+				B42553FF1900CB5F00EF9962 /* tabHome@2x.png in Resources */,
+				B42554031900CBA400EF9962 /* tabFavorite@2x.png in Resources */,
+				B42553F71900C8CF00EF9962 /* tabSetting.png in Resources */,
+				B42553AF1900BC7C00EF9962 /* Images.xcassets in Resources */,
+				B42554061900CC1600EF9962 /* tabWord.png in Resources */,
+				B42553FE1900CB5F00EF9962 /* tabHome.png in Resources */,
+				B42554271901223B00EF9962 /* tabPlayer.png in Resources */,
+				B425540F1900F21B00EF9962 /* Channels.plist in Resources */,
+				B425542A190124CB00EF9962 /* tabPlayer@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B42553B21900BC7C00EF9962 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42553C01900BC7C00EF9962 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B42553951900BC7C00EF9962 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42553AD1900BC7C00EF9962 /* AppDelegate.m in Sources */,
+				B42553CD1900BF0700EF9962 /* DataManager.m in Sources */,
+				B42553FB1900CB0700EF9962 /* FavoritesViewController.m in Sources */,
+				B425540A1900D7E700EF9962 /* ChannelDetailViewController.m in Sources */,
+				B425540D1900D80700EF9962 /* ArticleListViewController.m in Sources */,
+				B42553DF1900C0AD00EF9962 /* WordsViewController.m in Sources */,
+				B42553E21900C0B700EF9962 /* SettingViewController.m in Sources */,
+				B42553D91900C07800EF9962 /* ChannelsViewController.m in Sources */,
+				B42553A91900BC7C00EF9962 /* main.m in Sources */,
+				B425541819011F8300EF9962 /* PlayerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B42553B01900BC7C00EF9962 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42553C21900BC7C00EF9962 /* VoaEnglishTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B42553BA1900BC7C00EF9962 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B42553981900BC7C00EF9962 /* VoaEnglish */;
+			targetProxy = B42553B91900BC7C00EF9962 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B42553A51900BC7C00EF9962 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B42553A61900BC7C00EF9962 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B42553BE1900BC7C00EF9962 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B42553BF1900BC7C00EF9962 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B42553C31900BC7C00EF9962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B42553C41900BC7C00EF9962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B42553C61900BC7C00EF9962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VoaEnglish/VoaEnglish-Prefix.pch";
+				INFOPLIST_FILE = "VoaEnglish/VoaEnglish-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B42553C71900BC7C00EF9962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VoaEnglish/VoaEnglish-Prefix.pch";
+				INFOPLIST_FILE = "VoaEnglish/VoaEnglish-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B42553C91900BC7C00EF9962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VoaEnglish.app/VoaEnglish";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VoaEnglish/VoaEnglish-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VoaEnglishTests/VoaEnglishTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B42553CA1900BC7C00EF9962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VoaEnglish.app/VoaEnglish";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VoaEnglish/VoaEnglish-Prefix.pch";
+				INFOPLIST_FILE = "VoaEnglishTests/VoaEnglishTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B42553941900BC7C00EF9962 /* Build configuration list for PBXProject "VoaEnglish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B42553C31900BC7C00EF9962 /* Debug */,
+				B42553C41900BC7C00EF9962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B42553C51900BC7C00EF9962 /* Build configuration list for PBXNativeTarget "VoaEnglish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B42553C61900BC7C00EF9962 /* Debug */,
+				B42553C71900BC7C00EF9962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B42553C81900BC7C00EF9962 /* Build configuration list for PBXNativeTarget "VoaEnglishTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B42553C91900BC7C00EF9962 /* Debug */,
+				B42553CA1900BC7C00EF9962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B42553911900BC7C00EF9962 /* Project object */;
+}
