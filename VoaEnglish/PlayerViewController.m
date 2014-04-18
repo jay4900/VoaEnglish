@@ -27,11 +27,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [self.navigationController setNavigationBarHidden:YES];
-    [self.navigationController setToolbarHidden:NO];
-    NSLog(@"%@",self.navigationController.toolbar);
-    [self.navigationController.toolbar setFrame:CGRectMake(0, 0, 320, 32)];
-//    [self.navigationController.toolbar setCenter:CGPointMake(0, 0)];
+//    [self.navigationController setNavigationBarHidden:NO];
+    UIButton *btnPlay = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btnPlay setFrame:CGRectMake(0, 0, 40, 40)];
+//    [btnPlay setTitle:@"Play" forState:UIControlStateNormal];
+    [btnPlay setBackgroundImage:[UIImage imageNamed:@"btnPlay.png"] forState:UIControlStateNormal];
+    [self.navigationItem setTitleView:btnPlay];
 }
 
 - (void)didReceiveMemoryWarning

@@ -39,6 +39,16 @@
 		B425541819011F8300EF9962 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B425541719011F8300EF9962 /* PlayerViewController.m */; };
 		B42554271901223B00EF9962 /* tabPlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = B42554251901223B00EF9962 /* tabPlayer.png */; };
 		B425542A190124CB00EF9962 /* tabPlayer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4255429190124CB00EF9962 /* tabPlayer@2x.png */; };
+		B4A5630919012DA500E9DD09 /* btnPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = B4A562FF19012DA500E9DD09 /* btnPlay.png */; };
+		B4A5630A19012DA500E9DD09 /* btnPlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4A5630019012DA500E9DD09 /* btnPlay@2x.png */; };
+		B4A5630B19012DA500E9DD09 /* btnPrevious.png in Resources */ = {isa = PBXBuildFile; fileRef = B4A5630119012DA500E9DD09 /* btnPrevious.png */; };
+		B4A5630C19012DA500E9DD09 /* btnPrevious@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4A5630219012DA500E9DD09 /* btnPrevious@2x.png */; };
+		B4A5630D19012DA500E9DD09 /* btnStop.png in Resources */ = {isa = PBXBuildFile; fileRef = B4A5630319012DA500E9DD09 /* btnStop.png */; };
+		B4A5630E19012DA500E9DD09 /* btnStop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4A5630419012DA500E9DD09 /* btnStop@2x.png */; };
+		B4A5630F19012DA500E9DD09 /* btnNext.png in Resources */ = {isa = PBXBuildFile; fileRef = B4A5630519012DA500E9DD09 /* btnNext.png */; };
+		B4A5631019012DA500E9DD09 /* btnNext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4A5630619012DA500E9DD09 /* btnNext@2x.png */; };
+		B4A5631119012DA500E9DD09 /* btnPause.png in Resources */ = {isa = PBXBuildFile; fileRef = B4A5630719012DA500E9DD09 /* btnPause.png */; };
+		B4A5631219012DA500E9DD09 /* btnPause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4A5630819012DA500E9DD09 /* btnPause@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +106,16 @@
 		B425541719011F8300EF9962 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		B42554251901223B00EF9962 /* tabPlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabPlayer.png; sourceTree = "<group>"; };
 		B4255429190124CB00EF9962 /* tabPlayer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabPlayer@2x.png"; sourceTree = "<group>"; };
+		B4A562FF19012DA500E9DD09 /* btnPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnPlay.png; sourceTree = "<group>"; };
+		B4A5630019012DA500E9DD09 /* btnPlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnPlay@2x.png"; sourceTree = "<group>"; };
+		B4A5630119012DA500E9DD09 /* btnPrevious.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnPrevious.png; sourceTree = "<group>"; };
+		B4A5630219012DA500E9DD09 /* btnPrevious@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnPrevious@2x.png"; sourceTree = "<group>"; };
+		B4A5630319012DA500E9DD09 /* btnStop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnStop.png; sourceTree = "<group>"; };
+		B4A5630419012DA500E9DD09 /* btnStop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnStop@2x.png"; sourceTree = "<group>"; };
+		B4A5630519012DA500E9DD09 /* btnNext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnNext.png; sourceTree = "<group>"; };
+		B4A5630619012DA500E9DD09 /* btnNext@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnNext@2x.png"; sourceTree = "<group>"; };
+		B4A5630719012DA500E9DD09 /* btnPause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnPause.png; sourceTree = "<group>"; };
+		B4A5630819012DA500E9DD09 /* btnPause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnPause@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +204,16 @@
 		B42553A31900BC7C00EF9962 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B4A562FF19012DA500E9DD09 /* btnPlay.png */,
+				B4A5630019012DA500E9DD09 /* btnPlay@2x.png */,
+				B4A5630119012DA500E9DD09 /* btnPrevious.png */,
+				B4A5630219012DA500E9DD09 /* btnPrevious@2x.png */,
+				B4A5630319012DA500E9DD09 /* btnStop.png */,
+				B4A5630419012DA500E9DD09 /* btnStop@2x.png */,
+				B4A5630519012DA500E9DD09 /* btnNext.png */,
+				B4A5630619012DA500E9DD09 /* btnNext@2x.png */,
+				B4A5630719012DA500E9DD09 /* btnPause.png */,
+				B4A5630819012DA500E9DD09 /* btnPause@2x.png */,
 				B4255429190124CB00EF9962 /* tabPlayer@2x.png */,
 				B42554251901223B00EF9962 /* tabPlayer.png */,
 				B42554041900CC1600EF9962 /* tabWord.png */,
@@ -295,18 +325,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A5630F19012DA500E9DD09 /* btnNext.png in Resources */,
 				B42553A71900BC7C00EF9962 /* InfoPlist.strings in Resources */,
 				B42553E41900C30800EF9962 /* Test.xib in Resources */,
 				B42554021900CBA400EF9962 /* tabFavorite.png in Resources */,
 				B42553F81900C8CF00EF9962 /* tabSetting@2x.png in Resources */,
+				B4A5631019012DA500E9DD09 /* btnNext@2x.png in Resources */,
 				B42554071900CC1600EF9962 /* tabWord@2x.png in Resources */,
 				B42553FF1900CB5F00EF9962 /* tabHome@2x.png in Resources */,
+				B4A5630D19012DA500E9DD09 /* btnStop.png in Resources */,
 				B42554031900CBA400EF9962 /* tabFavorite@2x.png in Resources */,
 				B42553F71900C8CF00EF9962 /* tabSetting.png in Resources */,
 				B42553AF1900BC7C00EF9962 /* Images.xcassets in Resources */,
 				B42554061900CC1600EF9962 /* tabWord.png in Resources */,
 				B42553FE1900CB5F00EF9962 /* tabHome.png in Resources */,
+				B4A5630919012DA500E9DD09 /* btnPlay.png in Resources */,
+				B4A5630A19012DA500E9DD09 /* btnPlay@2x.png in Resources */,
+				B4A5630C19012DA500E9DD09 /* btnPrevious@2x.png in Resources */,
 				B42554271901223B00EF9962 /* tabPlayer.png in Resources */,
+				B4A5631119012DA500E9DD09 /* btnPause.png in Resources */,
+				B4A5630E19012DA500E9DD09 /* btnStop@2x.png in Resources */,
+				B4A5630B19012DA500E9DD09 /* btnPrevious.png in Resources */,
+				B4A5631219012DA500E9DD09 /* btnPause@2x.png in Resources */,
 				B425540F1900F21B00EF9962 /* Channels.plist in Resources */,
 				B425542A190124CB00EF9962 /* tabPlayer@2x.png in Resources */,
 			);
@@ -541,6 +581,7 @@
 				B42553C71900BC7C00EF9962 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B42553C81900BC7C00EF9962 /* Build configuration list for PBXNativeTarget "VoaEnglishTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +590,7 @@
 				B42553CA1900BC7C00EF9962 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
