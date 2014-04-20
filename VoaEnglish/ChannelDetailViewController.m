@@ -8,6 +8,7 @@
 
 #import "ChannelDetailViewController.h"
 #import "DataManager.h"
+#import "ArticleListViewController.h"
 
 @interface ChannelDetailViewController ()
 
@@ -83,13 +84,18 @@
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
     [channelsArr exchangeObjectAtIndex:fromIndexPath.row withObjectAtIndex:toIndexPath.row];
-    NSString *path = [[DOCUMENTS stringByAppendingPathComponent:_currentChannel] stringByAppendingPathComponent:@"list.plist"];
+    NSString *path = [[DATA voaPath] stringByAppendingPathComponent:[_currentChannel stringByAppendingPathExtension:@"plist"]];
     [channelsArr writeToFile:path atomically:YES];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.tabBarController setSelectedIndex:2];
+    NSString *detailChannel = channelsArr[indexPath.row];
+    NSMutableArray *articleListArr = [DATA getArticleListOfDetailChannel:detailChannel InChannel:_currentChannel];
+    ArticleListViewController *articleListController = [[ArticleListViewController alloc] init];
+    articleListController.articleListArr = articleListArr;
+    [self.navigationController pushViewController:articleListController animated:YES];
+    
 }
 // Override to support conditional rearranging of the table view.
 //- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath

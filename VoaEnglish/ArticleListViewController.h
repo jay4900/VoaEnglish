@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ArticleListViewController : UITableViewController
-
+@property NSMutableArray *articleListArr;
 @end

@@ -13,7 +13,12 @@
 
 @interface DataManager : NSObject
 @property NSDictionary *channelsDic;
+@property NSString *voaPath;
 
 + (id)shared;
 - (NSMutableArray *)getDetailListOfChannel:(NSString *)channel;
+- (NSMutableArray *)getArticleListOfDetailChannel:(NSString *)detailChannel InChannel:(NSString *)channel;
+- (NSString *)getMp3UrlOfArticle:(NSMutableArray *)articleArr;
+- (NSString *)createMD5:(NSString *)aString;
+- (void)parseVoaList;
 @end

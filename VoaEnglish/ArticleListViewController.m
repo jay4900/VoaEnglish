@@ -7,8 +7,12 @@
 //
 
 #import "ArticleListViewController.h"
+#import "DataManager.h"
+#import "CellForArticle.h"
+#import "ProgressViewForCell.h"
+#import "ASIHTTPRequest.h"
 
-@interface ArticleListViewController ()
+@interface ArticleListViewController ()<ASIHTTPRequestDelegate, ASIProgressDelegate>
 
 @end
 
@@ -52,17 +56,77 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 1;
+    return [_articleListArr count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+//    static NSString *CellIdentifier = @"Cell";
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [CellForArticle cell];
     
     // Configure the cell...
+    NSMutableArray *articleArr = _articleListArr[indexPath.row];
+    cell.textLabel.text = articleArr[0];
+    cell.textLabel.numberOfLines = 2;
+    cell.textLabel.font = [UIFont systemFontOfSize:12];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSMutableArray *articleArr = _articleListArr[indexPath.row];
+    NSString *title = articleArr[0];
+    NSString *state = articleArr[2];
+    if ([@"NoFile" isEqualToString:state]) {
+        NSString *surl = [DATA getMp3UrlOfArticle:articleArr];
+        NSString *name = [DATA createMD5:title];
+        NSString *path = [[DATA voaPath] stringByAppendingPathComponent:[name stringByAppendingPathExtension:@"mp3"]];
+        NSLog(@"%@",path);
+        UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+        ProgressViewForCell *progressIndicator = [ProgressViewForCell createProgressViewWithParent:cell];
+//        progressIndicator.frame= CGRectMake(0, -10, 320, 10);
+        progressIndicator.hidden = YES;
+        [cell addSubview:progressIndicator];
+        ASIHTTPRequest *request;
+        request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:surl]];
+        [request setDownloadDestinationPath:path];
+        [request setDownloadProgressDelegate:progressIndicator];
+        [request setShowAccurateProgress:YES];
+        [request setDelegate:self];
+        [request startAsynchronous];
+        
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        
+    }else if ([@"DownLoading" isEqualToString:state]) {
+        
+    }else if ([@"DownLoaded" isEqualToString:state]) {
+        
+    }else if ([@"Readed" isEqualToString:state]) {
+        
+    }
+}
+
+- (void)downLoadArticle
+{
+    
+}
+
+- (void)request:(ASIHTTPRequest *)request didReceiveData:(NSData *)data
+{
+    ProgressViewForCell *progressIndicator1 = (id)request.downloadProgressDelegate;
+    UITableViewCell *cell = (id)progressIndicator1.parentView;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%.f%%",progressIndicator1.progress*100];
+}
+
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
+    ProgressViewForCell *progressIndicator1 = (id)request.downloadProgressDelegate;
+    UITableViewCell *cell = (id)progressIndicator1.parentView;
+    cell.detailTextLabel.text = @"";
+    [progressIndicator1 removeFromSuperview];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 }
 
 /*

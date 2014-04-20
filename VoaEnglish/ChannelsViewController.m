@@ -42,6 +42,7 @@
 //    [self.navigationItem setRightBarButtonItems:@[playingItem]];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     channels = @[@"VOA Special English", @"VOA Learning English", @"VOA Standard English"];
+//    [DATA getArticleListOfDetailChannel:@"This is America" InChannel:@"VOA Special English"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -86,29 +87,6 @@
     detailViewController.channelsArr = detailListArr;
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
 
 /*
 // Override to support rearranging the table view.
