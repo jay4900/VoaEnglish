@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChannelsViewController : UITableViewController
+@interface ChannelsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+
+@property (strong) UITableView *tableView;
 
 @end

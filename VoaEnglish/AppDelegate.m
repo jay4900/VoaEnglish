@@ -20,24 +20,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-//    StopwatchViewController *watchView = [[StopwatchViewController alloc] init];
-//    MapViewController *mapView = [[MapViewController alloc] init];
-//    CalendarViewController *calView = [[CalendarViewController alloc] init];
-//    HistoryViewController *historyView = [[HistoryViewController alloc] init];
-//    MoreViewController *moreView = [[MoreViewController alloc] init];
-//    UITabBarController *tabBarController = [[UITabBarController alloc] init];
-//    watchView.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"StopWatch" image:[UIImage imageNamed:@"tabStopwatch.png"] tag:0];
-//    mapView.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Map" image:[UIImage imageNamed:@"tabMap.png"] tag:1];
-//    calView.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Calendar" image:[UIImage imageNamed:@"tabCalendar.png"] tag:2];
-//    historyView.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"History" image:[UIImage imageNamed:@"tabHistory.png"] tag:3];
-//    moreView.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMore tag:4];
-//    tabBarController.viewControllers = [[NSArray alloc] initWithObjects:watchView,mapView,calView,historyView,moreView, nil];
-//    self.window.rootViewController = tabBarController;
-    ChannelsViewController *chView = [[ChannelsViewController alloc] initWithStyle:UITableViewStylePlain];
+    ChannelsViewController *chView = [[ChannelsViewController alloc] init];
     UINavigationController *nvChView = [[UINavigationController alloc] initWithRootViewController:chView];
     FavoritesViewController *faView = [[FavoritesViewController alloc] initWithStyle:UITableViewStylePlain];
     UINavigationController *nvFaView = [[UINavigationController alloc] initWithRootViewController:faView];
-    PlayerViewController *plView = [[PlayerViewController alloc] init];
+    PlayerViewController *plView = [PlayerViewController shared];
     UINavigationController *nvPlView = [[UINavigationController alloc] initWithRootViewController:plView];
     WordsViewController *woView = [[WordsViewController alloc] initWithStyle:UITableViewStylePlain];
     UINavigationController *nvWoView = [[UINavigationController alloc] initWithRootViewController:woView];

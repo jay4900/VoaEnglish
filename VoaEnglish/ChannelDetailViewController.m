@@ -35,8 +35,10 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    UIBarButtonItem *playingItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:nil action:nil];
+    [self.navigationItem setRightBarButtonItems:@[playingItem]];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,6 +68,7 @@
     
     // Configure the cell...
     cell.textLabel.text = channelsArr[indexPath.row];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }
@@ -91,8 +94,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *detailChannel = channelsArr[indexPath.row];
-    NSMutableArray *articleListArr = [DATA getArticleListOfDetailChannel:detailChannel InChannel:_currentChannel];
+    NSMutableArray *articleListArr = [DATA getLocalArticleListOfDetailChannel:detailChannel];
     ArticleListViewController *articleListController = [[ArticleListViewController alloc] init];
+    articleListController.channel = _currentChannel;
+    articleListController.detailChannel = detailChannel;
     articleListController.articleListArr = articleListArr;
     [self.navigationController pushViewController:articleListController animated:YES];
     

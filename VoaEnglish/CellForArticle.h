@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CellForArticle : UITableViewCell
-+ (id)cell;
+//@property (strong) UIProgressView *progressIndicator;
+@property NSInteger row;
++ (id)cellWithIdentifier:(NSString *)cellIdentifier;
 @end

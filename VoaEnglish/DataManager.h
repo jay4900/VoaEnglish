@@ -10,6 +10,7 @@
 
 #define DATA [DataManager shared]
 #define DOCUMENTS [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+#define WIDTH [[UIScreen mainScreen] bounds].size.width
 
 @interface DataManager : NSObject
 @property NSDictionary *channelsDic;
@@ -17,8 +18,10 @@
 
 + (id)shared;
 - (NSMutableArray *)getDetailListOfChannel:(NSString *)channel;
-- (NSMutableArray *)getArticleListOfDetailChannel:(NSString *)detailChannel InChannel:(NSString *)channel;
+- (NSMutableArray *)getLocalArticleListOfDetailChannel:(NSString *)detailChannel;
+- (NSMutableArray *)getServerArticleListOfDetailChannel:(NSString *)detailChannel WithPage:(NSInteger)page;
 - (NSString *)getMp3UrlOfArticle:(NSMutableArray *)articleArr;
+- (BOOL)article:(NSString *)title exsitInLocalList:(NSArray *)arr;
 - (NSString *)createMD5:(NSString *)aString;
 - (void)parseVoaList;
 @end

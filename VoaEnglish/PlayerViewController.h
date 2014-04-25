@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface PlayerViewController : UIViewController
++ (PlayerViewController *)shared;
+- (void)play;
+@property NSString *fileName;
 
 @end

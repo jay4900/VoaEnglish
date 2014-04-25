@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ArticleListViewController : UITableViewController
-@property NSMutableArray *articleListArr;
+@property NSString *channel;
+@property NSString *detailChannel;
+@property (strong) NSMutableArray *articleListArr;
 @end

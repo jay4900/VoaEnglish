@@ -10,14 +10,19 @@
 
 @implementation CellForArticle
 
-+ (id)cell
++ (id)cellWithIdentifier:(NSString *)cellIdentifier
 {
-    CellForArticle *cell = [[CellForArticle alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"MyCell"];
+    CellForArticle *cell = [[CellForArticle alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+//    CellForArticle *cell = [[CellForArticle alloc] init];
     [cell.textLabel setFont:[UIFont systemFontOfSize:12]];
-    [cell.textLabel setLineBreakMode:NSLineBreakByCharWrapping];
+    [cell.textLabel setLineBreakMode:NSLineBreakByWordWrapping];
     [cell.textLabel setNumberOfLines:0];
     
-    [cell.detailTextLabel setFont:[UIFont systemFontOfSize:8]];
+    [cell.detailTextLabel setFont:[UIFont systemFontOfSize:6]];
+//    cell.progressIndicator = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleBar];
+//    cell.progressIndicator.frame= CGRectMake(0, 0, cell.frame.size.width, 10);
+//    cell.progressIndicator.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+//    [cell addSubview:cell.progressIndicator];
     return cell;
 }
 

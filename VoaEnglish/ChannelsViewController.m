@@ -9,6 +9,8 @@
 #import "ChannelsViewController.h"
 #import "DataManager.h"
 #import "ChannelDetailViewController.h"
+#import "PlayerViewController.h"
+#import "FavoritesViewController.h"
 
 @interface ChannelsViewController ()
 
@@ -19,15 +21,6 @@
     NSArray *channels;
 }
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-//        self.title = @"Home";
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -38,11 +31,28 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-//    UIBarButtonItem *playingItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:nil action:nil];
-//    [self.navigationItem setRightBarButtonItems:@[playingItem]];
+    UIBarButtonItem *playingItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPlay target:self action:@selector(showPlayerView)];
+    [self.navigationItem setRightBarButtonItems:@[playingItem]];
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    [self.view addSubview:self.tableView];
     channels = @[@"VOA Special English", @"VOA Learning English", @"VOA Standard English"];
-//    [DATA getArticleListOfDetailChannel:@"This is America" InChannel:@"VOA Special English"];
+}
+
+- (void)showPlayerView
+{
+    
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:[[FavoritesViewController alloc] initWithStyle:UITableViewStylePlain]];
+//    [self.navigationController transitionFromViewController:self
+//                                           toViewController:nvc
+//                                                   duration:0.5
+//                                                    options:UIViewAnimationOptionTransitionFlipFromLeft
+//                                                 animations:nil
+//                                                 completion:nil];
+//    [self.navigationController pushViewController:[PlayerViewController shared] animated:YES];
+    [self presentViewController:[[PlayerViewController alloc] init] animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

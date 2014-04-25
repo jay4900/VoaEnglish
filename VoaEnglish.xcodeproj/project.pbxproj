@@ -26,6 +26,8 @@
 		83A267E31902725300FF3B7F /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A267E21902725300FF3B7F /* libz.1.1.3.dylib */; };
 		83A267E61902734600FF3B7F /* CellForArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A267E51902734600FF3B7F /* CellForArticle.m */; };
 		83A267E91902742400FF3B7F /* ProgressViewForCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A267E81902742400FF3B7F /* ProgressViewForCell.m */; };
+		B406023B190520FC007964A0 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B406023A190520FC007964A0 /* CoreAudio.framework */; };
+		B41DBE4519065470004160E4 /* DicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B41DBE4419065470004160E4 /* DicViewController.m */; };
 		B425539D1900BC7C00EF9962 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B425539C1900BC7C00EF9962 /* Foundation.framework */; };
 		B425539F1900BC7C00EF9962 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B425539E1900BC7C00EF9962 /* CoreGraphics.framework */; };
 		B42553A11900BC7C00EF9962 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42553A01900BC7C00EF9962 /* UIKit.framework */; };
@@ -118,6 +120,9 @@
 		83A267E51902734600FF3B7F /* CellForArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellForArticle.m; sourceTree = "<group>"; };
 		83A267E71902742400FF3B7F /* ProgressViewForCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewForCell.h; sourceTree = "<group>"; };
 		83A267E81902742400FF3B7F /* ProgressViewForCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewForCell.m; sourceTree = "<group>"; };
+		B406023A190520FC007964A0 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		B41DBE4319065470004160E4 /* DicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DicViewController.h; path = ../../DictionaryParser/DictionaryParser/DicViewController.h; sourceTree = "<group>"; };
+		B41DBE4419065470004160E4 /* DicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DicViewController.m; path = ../../DictionaryParser/DictionaryParser/DicViewController.m; sourceTree = "<group>"; };
 		B42553991900BC7C00EF9962 /* VoaEnglish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoaEnglish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B425539C1900BC7C00EF9962 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B425539E1900BC7C00EF9962 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -179,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B406023B190520FC007964A0 /* CoreAudio.framework in Frameworks */,
 				83A267E31902725300FF3B7F /* libz.1.1.3.dylib in Frameworks */,
 				83A267E11902723B00FF3B7F /* MobileCoreServices.framework in Frameworks */,
 				83A267DF1902723300FF3B7F /* SystemConfiguration.framework in Frameworks */,
@@ -267,6 +273,7 @@
 		B425539B1900BC7C00EF9962 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B406023A190520FC007964A0 /* CoreAudio.framework */,
 				83A267E21902725300FF3B7F /* libz.1.1.3.dylib */,
 				83A267E01902723B00FF3B7F /* MobileCoreServices.framework */,
 				83A267DE1902723300FF3B7F /* SystemConfiguration.framework */,
@@ -305,6 +312,8 @@
 				B42553E11900C0B700EF9962 /* SettingViewController.m */,
 				B425541619011F8300EF9962 /* PlayerViewController.h */,
 				B425541719011F8300EF9962 /* PlayerViewController.m */,
+				B41DBE4319065470004160E4 /* DicViewController.h */,
+				B41DBE4419065470004160E4 /* DicViewController.m */,
 				B425540E1900F21B00EF9962 /* Channels.plist */,
 				B42553E31900C30800EF9962 /* Test.xib */,
 				83A267BC1902713900FF3B7F /* ASIHTTPRequest */,
@@ -503,6 +512,7 @@
 				83A267E61902734600FF3B7F /* CellForArticle.m in Sources */,
 				83A267DA1902713900FF3B7F /* ASINetworkQueue.m in Sources */,
 				83A267D81902713900FF3B7F /* ASIHTTPRequest.m in Sources */,
+				B41DBE4519065470004160E4 /* DicViewController.m in Sources */,
 				83A267B91902443300FF3B7F /* TFHpple.m in Sources */,
 				B425541819011F8300EF9962 /* PlayerViewController.m in Sources */,
 			);
